@@ -11,10 +11,8 @@ for(let i=0;i<givenString.length;i++)
         console.log(stack,'---')
         stack.shift()
     }else{
-        break;
-        
+        break;   
     }
-    
 }
 
 if(stack.length=== 0){

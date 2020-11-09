@@ -1,0 +1,407 @@
+{
+    "base": {
+        "availableOnFids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V"
+        ],
+        "type": "fn",
+        "occurence": 22
+    },
+    "caption": {
+        "availableOnFids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V"
+        ],
+        "type": "fn",
+        "occurence": 22
+    },
+    "captions": {
+        "availableOnFids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V"
+        ],
+        "type": "fn",
+        "occurence": 22
+    },
+    "required": {
+        "availableOnFids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V"
+        ],
+        "type": "fn",
+        "occurence": 22
+    },
+    "order": {
+        "availableOnFids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V"
+        ],
+        "type": "fn",
+        "occurence": 22
+    },
+    "formWidth": {
+        "availableOnFids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V"
+        ],
+        "type": "fn",
+        "occurence": 22
+    },
+    "uuid": {
+        "availableOnFids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V"
+        ],
+        "type": "fn",
+        "occurence": 22
+    },
+    "globalSearch": {
+        "availableOnFids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V"
+        ],
+        "type": "fn",
+        "occurence": 22
+    },
+    "hasIndex": {
+        "availableOnFids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V"
+        ],
+        "type": "fn",
+        "occurence": 22
+    },
+    "tooltips": {
+        "availableOnFids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V"
+        ],
+        "type": "fn",
+        "occurence": 22
+    },
+    "fn": {
+        "availableOnFids": [
+            "A"
+        ],
+        "type": "fn",
+        "occurence": 1
+    },
+    "height": {
+        "availableOnFids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "N",
+            "O"
+        ],
+        "type": "fn",
+        "occurence": 6
+    },
+    "stringAutocorrect": {
+        "availableOnFids": [
+            "B",
+            "C"
+        ],
+        "type": "string",
+        "occurence": 2
+    },
+    "stringMultiline": {
+        "availableOnFids": [
+            "B",
+            "C"
+        ],
+        "type": "string",
+        "occurence": 2
+    },
+    "booleanRenderer": {
+        "availableOnFids": [
+            "F"
+        ],
+        "type": "boolean",
+        "occurence": 1
+    },
+    "nextChoiceId": {
+        "availableOnFids": [
+            "G",
+            "H"
+        ],
+        "type": "choice",
+        "occurence": 2
+    },
+    "values": {
+        "availableOnFids": [
+            "G",
+            "H"
+        ],
+        "type": "choice",
+        "occurence": 2
+    },
+    "choiceRenderer": {
+        "availableOnFids": [
+            "G",
+            "V"
+        ],
+        "type": "choice",
+        "occurence": 2
+    },
+    "multiRenderer": {
+        "availableOnFids": [
+            "H"
+        ],
+        "type": "multi",
+        "occurence": 1
+    },
+    "dateCalendar": {
+        "availableOnFids": [
+            "I",
+            "M"
+        ],
+        "type": "date",
+        "occurence": 2
+    },
+    "dateYearly": {
+        "availableOnFids": [
+            "I"
+        ],
+        "type": "date",
+        "occurence": 1
+    },
+    "timeFormat": {
+        "availableOnFids": [
+            "J"
+        ],
+        "type": "time",
+        "occurence": 1
+    },
+    "timeintervalFormat": {
+        "availableOnFids": [
+            "L"
+        ],
+        "type": "timeinterval",
+        "occurence": 1
+    },
+    "fileHandling": {
+        "availableOnFids": [
+            "N",
+            "O"
+        ],
+        "type": "file",
+        "occurence": 2
+    },
+    "bgSize": {
+        "availableOnFids": [
+            "N",
+            "O"
+        ],
+        "type": "file",
+        "occurence": 2
+    },
+    "linkPreview": {
+        "availableOnFids": [
+            "P"
+        ],
+        "type": "link",
+        "occurence": 1
+    }
+}

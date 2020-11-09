@@ -1,3 +1,5 @@
+const fs = require('fs');
+const fieldMetadata = JSON.parse(fs.readFileSync('./metadata.json', { encoding: 'utf-8' }));
 const schema = {
     "seq": 1,
     "version": 2,
@@ -332,36 +334,54 @@ const schema = {
         }
     }
 }
+let someObject = {
+    common: [],
+};
 
-
-function A() {
-    let typeField = schema.types.A.fields;
-    let fd = {};
-    console.log('--------------------------------------------------------------------------------------------------------------------------------')
-    Object.entries(typeField).map(item => {
-
-        Object.keys(item[1]).forEach(i => {
-
-            if (fd[i]) {
-                fd[i].availableOnFids.push(item[0]);
+for (let fieldProp in fieldMetadata) {
+    const fieldPropMetadata = fieldMetadata[fieldProp];
+    if (fieldPropMetadata.occurence === 22) {
+        // common
+        someObject.common.push({ name: fieldProp, type: getTypeOf(fieldProp, fieldPropMetadata.availableOnFids[0]) })
+    } else {
+        const availableOnFids = fieldPropMetadata.availableOnFids;
+        for (let index in availableOnFids) {
+            const fid = availableOnFids[index];
+            const field = schema.types.A.fields[fid];
+            const fieldBase = field.base;
+            if (!someObject[fieldBase]) {
+                someObject[fieldBase] = [{name: fieldProp, type: getTypeOf(fieldProp, fid)}]
             } else {
-                fd[i] = {};
-                fd[i].availableOnFids = [];
-                fd[i].type = item[1].base;
-                fd[i].availableOnFids.push(item[0]);
+                someObject[fieldBase].push({name: fieldProp, type: getTypeOf(fieldProp, fid)});
             }
-        })
-
-    })
-    let commonProperties = [];
-    Object.keys(fd).forEach(property => {
-        fd[property].occurence = fd[property].availableOnFids.length;
-        if (fd[property].occurence === 22) {
-            commonProperties.push(property)
         }
-    })
-
-    console.log(JSON.stringify(fd, null, 4))
-
+    }
 }
-A()
+
+// console.log(someObject)
+
+let s = '';
+
+for (let base in someObject) {
+    if (base === 'common') {
+        s += `interface IBaseField {${someObject[base].map(ob => `\t\n${ob.name} : ${ob.type}`).join(';')}\n}`
+    } else {
+        s += `\n\ninterface I${base} extends IBaseField {${someObject[base].map(ob => `\t\n${ob.name} : ${ob.type}`).join(';')}\n}`
+    }
+}
+
+console.log(s);
+
+function getTypeOf(fieldProp, availableFid) {
+    const type = schema.types.A;
+    const fields = type.fields;
+    const field = fields[availableFid || 'A'];
+    if (Array.isArray(field[fieldProp])) {
+        let itemType = typeof field[fieldProp][0];
+        return `${itemType}[]`;
+    } else if (typeof field[fieldProp] === 'object') {
+        return `{}`;
+    } else {
+        return typeof field[fieldProp];
+    }
+}
